@@ -43,7 +43,7 @@
 									</label>
 								</div>
 								<div class="w-50 text-md-right">
-									<a href="#" style="color: #fff">Şifremi Unuttum ?</a>
+									<a href="kayit" style="color: #fff">Şifremi Unuttum ?</a>
 								</div>
 
 

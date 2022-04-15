@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('giris');
+    return view('index');
 });
+
+Route::view('kayit','kayit');
+Route::view('giris','giris');
+Route::view('index','index');
+Route::view('contact','contact');
+Route::view('checkout','checkout');
+Route::view('products','products');
+Route::view('single','single');
+Route::view('typo','typo');
+
+
