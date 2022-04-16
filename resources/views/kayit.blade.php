@@ -48,7 +48,7 @@
             </div>
             <div class="signup-image">
                 <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
-                <a href="giris" class="signup-image-link">Ben üyeyim</a>
+                <a href="giris" class="signup-image-link">Ben üyeyim </a>   
                 <a href="index" class="signup-image-link">Anasayfa</a>
             </div>
         </div>
