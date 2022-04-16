@@ -40,11 +40,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="clearfix"> </div>
 
 					</div>
-					<div class="cart box_1">
-						<a href="register">
-							<img src="images/arrow.png" alt="" />
-						</a>
-						<p><a href="register" class="simpleCart_empty">Hesap Oluştur</a></p>
+					<div style="margin-right:50px;" class="cart box_1">
+						<p><a href="giris">
+							<img src="images/arrow.png" height="20px" width="20" alt="" />
+						</a></p>
+						<p><a href="giris" class="simpleCart_empty">Giriş Yap</a></p>
 						<div class="clearfix"> </div>
 
 					</div>
@@ -156,10 +156,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 header-right">
 				<div class="search-bar">
 					<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-					<input type="submit" value="">
 				</div>
 			</div>
-			<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>

@@ -1,61 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-  	<title>Login 10</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kayıt Ol</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-	<link rel="stylesheet" href="css/style.css">
-
-	</head>
-	<body class="img js-fullheight" style="background-image: url(images/bg2.jpg);">
-	<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-
-				</div>
-			</div>
-			<div class="row justify-content-right ">
-				<div class="col-md-6 col-lg-4">
-					<div class="login-wrap p-0">
-		      	<h3 class="mb-4 text-center">Giris Yap</h3>
-		      	<form action="#" class="signin-form">
-		      		<div class="form-group">
-		      			<input type="text" class="form-control" placeholder="Kullanıcı Adı" required>
-		      		</div>
-	            <div class="form-group">
-	              <input id="password-field" type="password" class="form-control" placeholder="Şifre" required>
-	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-	            </div>
-	            <div class="form-group">
-	            	<button type="submit" class="form-control btn btn-primary submit px-3">Giriş Yap</button>
-	            </div>
-	            <div class="form-group d-md-flex">
-		            	<div class="w-50 text-md-left">
-									<a href="#" style="color: #fff">Kayıt ol</a>
-								</div>
-
-								<div class="w-50 text-md-right">
-									<a href="#" style="color: #fff">Şifremi Unuttum ?</a>
-								</div>
-	            </div>
-	          </form>
-		      </div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
-
-	</body>
-</html>
-
+<!-- Sign up form -->
+<section class="signup">
+    <div class="container">
+        <div class="signup-content">
+            <div class="signup-form">
+                <h2 class="form-title">Kayıt Ol</h2>
+                <form method="POST" class="register-form" id="register-form">
+                    <div class="form-group">
+                        <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="text" name="name" id="name" placeholder="Ad"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="soyad"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="text" name="soyad" id="soyad" placeholder="Soyad"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="number" name="tel" id="tel" placeholder="Telefon"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="zmdi zmdi-email"></i></label>
+                        <input type="email" name="email" id="email" placeholder="Mail"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                        <input type="password" name="pass" id="pass" placeholder="Şifre"/>
+                    </div>
+                    <div class="form-group form-button">
+                        <input type="submit" name="signup" id="signup" class="form-submit" value="Kayıt Ol"/>
+                    </div>
+                </form>
+            </div>
+            <div class="signup-image">
+                <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                <a href="giris" class="signup-image-link">Ben üyeyim</a>
+                <a href="index" class="signup-image-link">Anasayfa</a>
+            </div>
+        </div>
+    </div>
+</section>
