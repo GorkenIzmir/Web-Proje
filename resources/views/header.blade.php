@@ -29,7 +29,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="clearfix"></div>
 					</div>
 				</div>
-				<div class="col-md-6 top-header-left">
+				<div class="col-md-6 top-header-main">
 					<div class="cart box_1">
 						<a href="checkout">
 							 <div class="total">
@@ -40,13 +40,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="clearfix"> </div>
 
 					</div>
+
+                    @if(session()->get('kull')==null)
 					<div style="margin-right:50px;" class="cart box_1">
 						<p><a href="giris">
-							<img src="images/arrow.png" height="20px" width="20" alt="" />
+							<img src="images/arr.png" height="20px" width="20" alt="" />
 						</a></p>
 						<p><a href="giris" class="simpleCart_empty">Giriş Yap</a></p>
 						<div class="clearfix"> </div>
+@else
+<div style="margin-right:50px;" class="cart box_1">
+    <p><a href="#">
+        <img src="images/arr.png" height="20px" width="20" alt="" />
+    </a></p>
+    <p><a href="index" class="simpleCart_empty"> {{ session()->get('kull')->ad.' '.session()->get('kull')->soyad }}</a></p>
+    <p><a href="kullcikis" class="simpleCart_empty"> Çıkış Yap</a></p>
+    <div class="clearfix"> </div>
 
+@endif
 					</div>
 				</div>
 				<div class="clearfix"></div>

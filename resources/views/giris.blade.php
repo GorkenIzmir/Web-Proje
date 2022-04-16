@@ -23,14 +23,15 @@
 
             <div class="signin-form">
                 <h2 class="form-title">Giris Yap</h2>
-                <form method="POST" class="register-form" id="login-form">
+                <form id="addCustomer"  class="form-group" method="POST" action="{{route('kullhome')}}" >
+                    @csrf <!-- {{ csrf_field() }} -->
                     <div class="form-group">
                         <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                        <input type="text" name="your_name" id="your_name" placeholder="E-posta"/>
+                        <input type="text" name="eposta" id="eposta" placeholder="E-posta"/>
                     </div>
                     <div class="form-group">
                         <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                        <input type="password" name="your_pass" id="your_pass" placeholder="Şifre"/>
+                        <input type="password" name="sifre" id="sifre" placeholder="Şifre"/>
                     </div>
                     <div class="form-group">
                         <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />

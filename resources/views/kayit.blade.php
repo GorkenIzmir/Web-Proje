@@ -19,10 +19,11 @@
         <div class="signup-content">
             <div class="signup-form">
                 <h2 class="form-title">Kayıt Ol</h2>
-                <form method="POST" class="register-form" id="register-form">
+                <form   class="form-group" method="POST" >
+                    @csrf <!-- {{ csrf_field() }} -->
                     <div class="form-group">
                         <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                        <input type="text" name="name" id="name" placeholder="Ad"/>
+                        <input type="text" name="ad" id="ad" placeholder="Ad"/>
                     </div>
                     <div class="form-group">
                         <label for="soyad"><i class="zmdi zmdi-account material-icons-name"></i></label>
@@ -34,11 +35,11 @@
                     </div>
                     <div class="form-group">
                         <label for="email"><i class="zmdi zmdi-email"></i></label>
-                        <input type="email" name="email" id="email" placeholder="Mail"/>
+                        <input type="email" name="eposta" id="eposta" placeholder="Mail"/>
                     </div>
                     <div class="form-group">
                         <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                        <input type="password" name="pass" id="pass" placeholder="Şifre"/>
+                        <input type="password" name="sifre" id="sifre" placeholder="Şifre"/>
                     </div>
                     <div class="form-group form-button">
                         <input type="submit" name="signup" id="signup" class="form-submit" value="Kayıt Ol"/>

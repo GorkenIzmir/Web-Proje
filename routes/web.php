@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\Projecontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,5 +25,11 @@ Route::view('checkout','checkout');
 Route::view('products','products');
 Route::view('single','single');
 Route::view('typo','typo');
+
+Route::post('kayit',[Projecontroller::class,'kullaniciekle']);
+Route::post('giris',[Projecontroller::class,'kullanicigiris'])->name("kullhome");
+Route::get('index', [Projecontroller::class, 'kullanasayfa'])->name("kullanasay");
+Route::get('kullcikis',[Projecontroller::class,'kullcikis']);
+
 
 
